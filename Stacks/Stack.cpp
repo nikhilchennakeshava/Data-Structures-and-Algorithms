@@ -1,12 +1,10 @@
-#include <iostream>
-#include <cstdio>
-#include <cstdlib>
+#include <bits/stdc++.h>
 
 #define SIZE 5
 
 using namespace std;
 
-int stack[SIZE];
+int s[SIZE];
 int top=-1;
 
 bool isempty()
@@ -27,12 +25,12 @@ bool isfull()
 
 void push(int item)
 {
-    stack[++top]=item;
+    s[++top]=item;
 }
 
 int pop()
 {
-    return (stack[top--]);
+    return (s[top--]);
 }
 
 int main()
@@ -75,7 +73,7 @@ int main()
                     else
                     {
                         for(i=0;i<=top;i++)
-                            cout<<stack[i]<<"\t";
+                            cout<<s[i]<<"\t";
                     }
                     break;
             case 4:
